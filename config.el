@@ -75,6 +75,9 @@
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
 
+;; enable sly flex style completion
+(setq sly-complete-symbol-function 'sly-flex-completions)
+
 (server-start)
 
 (add-to-list 'exec-path "/home/mostafa/bin")
