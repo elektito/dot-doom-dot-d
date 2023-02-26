@@ -76,3 +76,6 @@
 ;; they are implemented.
 
 (server-start)
+
+(add-to-list 'exec-path "/home/mostafa/bin")
+(add-to-list 'exec-path "/home/mostafa/.local/bin")
