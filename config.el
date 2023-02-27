@@ -80,5 +80,5 @@
 
 (server-start)
 
-(add-to-list 'exec-path "/home/mostafa/bin")
-(add-to-list 'exec-path "/home/mostafa/.local/bin")
+(add-to-list 'exec-path "~/bin")
+(add-to-list 'exec-path "~/.local/bin")
