@@ -83,3 +83,5 @@
 (add-to-list 'exec-path "~/bin")
 (add-to-list 'exec-path "~/.local/bin")
 (add-to-list 'exec-path "~/.cargo/bin")
+
+(setq projectile-project-search-path '("~/source"))
