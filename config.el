@@ -88,3 +88,19 @@
 
 ;; Make completion case-insensitive
 (setq completion-ignore-case t)
+
+;; Allow faster typing with completion. Use can press . to choose a completion
+;; and continue, or any bracket to just choose a completion.
+(defun complete-and-insert-char-func (char continue)
+  (lambda ()
+    (interactive)
+    (company-complete-selection)
+    (insert char)
+    (when continue
+      (company-complete))))
+(after! company-mode
+  (define-key company-active-map (kbd ".") (complete-and-insert-char-func "." t))
+  (define-key company-active-map (kbd "(") (complete-and-insert-char-func "(" nil))
+  (define-key company-active-map (kbd "[") (complete-and-insert-char-func "[" nil))
+  (define-key company-active-map (kbd "{") (complete-and-insert-char-func "{" nil))
+  (define-key company-active-map (kbd "SPC") (complete-and-insert-char-func " " nil)))
