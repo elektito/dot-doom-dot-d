@@ -85,3 +85,6 @@
 (add-to-list 'exec-path "~/.cargo/bin")
 
 (setq projectile-project-search-path '("~/source"))
+
+;; Make completion case-insensitive
+(setq completion-ignore-case t)
