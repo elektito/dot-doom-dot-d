@@ -98,7 +98,7 @@
     (insert char)
     (when continue
       (company-complete))))
-(after! company-mode
+(after! company
   (define-key company-active-map (kbd ".") (complete-and-insert-char-func "." t))
   (define-key company-active-map (kbd "(") (complete-and-insert-char-func "(" nil))
   (define-key company-active-map (kbd "[") (complete-and-insert-char-func "[" nil))
