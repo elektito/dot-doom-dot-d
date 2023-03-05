@@ -53,6 +53,8 @@
 (package! pyvenv)
 (package! rg)
 (package! bluetooth)
+(package! tree-sitter)
+(package! tree-sitter-langs)
 
 ;;;; the following is needed for now as described here:
 ;;;; https://emacs.stackexchange.com/questions/75827/doom-emacs-error-running-hook-global-git-commit-mode-because-void-variable

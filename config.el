@@ -100,3 +100,9 @@
       (company-complete))))
 (after! company
   (define-key company-active-map (kbd ".") (complete-and-insert-char-func "." t)))
+
+(use-package! tree-sitter
+  :config
+  (require 'tree-sitter-langs)
+  (global-tree-sitter-mode)
+  (add-hook 'tree-sitter-after-on-hook #'tree-sitter-hl-mode))
