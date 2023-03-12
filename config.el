@@ -110,3 +110,6 @@
 (after! org-roam
   (setq org-roam-directory "~/org/roam")
   (setq org-roam-index-file "~/org/roam/index.org"))
+
+(setq elpher-default-url-type "gemini")
+(map! :desc "Elpher Go" "C-c o g" #'elpher-go)
