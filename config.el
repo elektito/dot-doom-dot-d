@@ -106,3 +106,7 @@
   (require 'tree-sitter-langs)
   (global-tree-sitter-mode)
   (add-hook 'tree-sitter-after-on-hook #'tree-sitter-hl-mode))
+
+(after! org-roam
+  (setq org-roam-directory "~/org/roam")
+  (setq org-roam-index-file "~/org/roam/index.org"))
