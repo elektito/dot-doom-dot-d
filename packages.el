@@ -56,6 +56,7 @@
 (package! tree-sitter)
 (package! tree-sitter-langs)
 (package! elpher)
+(package! gemini-mode)
 
 ;;;; the following is needed for now as described here:
 ;;;; https://emacs.stackexchange.com/questions/75827/doom-emacs-error-running-hook-global-git-commit-mode-because-void-variable
