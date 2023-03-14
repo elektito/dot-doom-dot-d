@@ -113,3 +113,4 @@
 
 (setq elpher-default-url-type "gemini")
 (map! :desc "Elpher Go" "C-c o g" #'elpher-go)
+(map! :desc "Switch to Elpher" "C-c o e" #'elpher)
