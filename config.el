@@ -115,6 +115,7 @@
   (setq org-roam-index-file "~/org/roam/index.org"))
 
 (setq elpher-default-url-type "gemini")
+(setq elpher-certificate-directory "~/elpher-certs/")
 (map! :desc "Elpher Go" "C-c o g" #'elpher-go)
 (map! :desc "Switch to Elpher" "C-c o e" #'elpher)
 
