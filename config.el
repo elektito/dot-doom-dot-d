@@ -120,3 +120,5 @@
 (map! :desc "Switch to Elpher" "C-c o e" #'elpher)
 
 (setq uniquify-buffer-name-style 'post-forward-angle-brackets)
+
+(setq-default fill-column 72)
