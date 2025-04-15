@@ -57,3 +57,6 @@
 (package! tree-sitter-langs)
 (package! elpher)
 (package! gemini-mode)
+(package! xterm-color)
+(package! forth-mode)
+(package! protobuf-mode)
