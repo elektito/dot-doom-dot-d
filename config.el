@@ -122,3 +122,14 @@
 (setq uniquify-buffer-name-style 'post-forward-angle-brackets)
 
 (setq-default fill-column 72)
+
+;; single indent python parameters instead of double indent
+;; like this:
+;; def foo(
+;;     x,
+;;     y,
+;;     z,
+;; ):
+;;     pass
+(after! python
+  (setq python-indent-def-block-scale 1))
